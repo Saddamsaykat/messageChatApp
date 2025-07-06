@@ -5,7 +5,12 @@ export const countrySlice = baseApi.injectEndpoints({
     getAllMobile: builder.query({
       query: () => "/objects",
     }),
+
+    getAllCountry: builder.query({
+      query: () => "",
+      providesTags: ["country"],
+    }),
   }),
 });
 
-export const { useGetAllMobileQuery } = countrySlice;
+export const { useGetAllMobileQuery, useGetAllCountryQuery } = countrySlice;

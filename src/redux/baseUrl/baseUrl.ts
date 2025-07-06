@@ -1,1 +1,1 @@
-export const baseUrl = process.env.API_URL || "https://api.restful-api.dev";
+export const baseUrl = "https://restcountries.com/v3.1/all";

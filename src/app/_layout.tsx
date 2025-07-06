@@ -2,16 +2,12 @@ import { Stack } from "expo-router";
 import { Provider } from "react-redux";
 import { store } from "../redux/store/store";
 
+import "../../global.css";
+
 const RootLayout = () => {
   return (
     <Provider store={store}>
-      <Stack
-        screenOptions={{
-          headerStyle: { backgroundColor: '#1e293b' },
-          headerTintColor: '#fff',
-          headerTitleStyle: { fontWeight: '600' },
-        }}
-      />
+      <Stack />
     </Provider>
   );
 };
